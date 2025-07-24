@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendulum Simulation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Pendulum Simulation</h1>
+    <div id="controls">
+        <label><input type="checkbox" id="double-toggle"> Double Pendulum</label>
+        <label>Length 1: <input type="range" id="length1-slider" min="0.2" max="2" step="0.01" value="1.0"> <span id="length1-value">1.00</span> m</label>
+        <label>Length 2: <input type="range" id="length2-slider" min="0.2" max="2" step="0.01" value="1.0"> <span id="length2-value">1.00</span> m</label>
+        <label>Gravity (g): <input type="range" id="gravity-slider" min="1" max="20" step="0.1" value="9.81"> <span id="gravity-value">9.81</span> m/s²</label>
+        <label>Friction: <input type="range" id="friction-slider" min="0" max="1" step="0.01" value="0.02"> <span id="friction-value">0.02</span></label>
+    </div>
+    <canvas id="pendulum-canvas" width="600" height="400"></canvas>
+    <div id="data">
+        <h2>Live Data</h2>
+        <pre id="live-data"></pre>
+        <div id="live-data-2" style="display:none;">
+            <h2>Second Ball Data</h2>
+            <pre id="live-data2"></pre>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html> 

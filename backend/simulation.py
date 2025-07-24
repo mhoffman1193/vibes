@@ -1,0 +1,1 @@
+# Simulation is now handled entirely in the frontend. This file is no longer used. 
